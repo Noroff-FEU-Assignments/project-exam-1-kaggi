@@ -3,15 +3,21 @@
     src: url("../fonts/GouditaSerial/font.woff") format("woff");
   }
 
-body {
-    background-image: url("../images/parchment-texture-1171541.jpg");
-    background-color: white;
-}
+  body {    
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: flex;
+    flex-direction: column;
+  }
 
 
 .game_cover {
     max-height: 150px;
 }
+
+
 
 #header_p {
     border-radius: 3%;
@@ -22,4 +28,25 @@ body {
     font-size: 3em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    font-family: "goudita";
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-image: url("../images/parchment-texture-1171541.jpg");
+    background-color: white;    
+    
+}
+
+#hamburger_menu_label, #hamburger_menu {
+    display: none;
+}
+
+#header_pictures {
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    margin-top: 0;
+    text-align: center;
+    background-image: url("../images/frame-1184544.jpg");
+    background-color: white;
+    background-size: cover;
 }
