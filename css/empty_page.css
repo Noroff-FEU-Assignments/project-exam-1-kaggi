@@ -1,86 +1,13 @@
-@font-face {
-  font-family: "goudita";
-  src: url("../fonts/GouditaSerial/font.woff") format("woff");
+
+
+blockquote {
+    text-align: center;
 }
 
-body {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.has-text-align-center {
+    text-align: center;
 }
 
-.game_cover {
-  max-height: 150px;
-}
-
-#header_p {
-  border-color: black;
-  border-style: groove;
-  border-width: medium;
-  text-align: center;
-  font-size: 3em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  font-family: "goudita";
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 0;
-  background-image: url("../images/parchment-texture-1171541.jpg");
-}
-
-#hamburger_menu_label,
-#hamburger_menu {
-  display: none;
-}
-
-nav {
-  border-color: black;
-  border-style: groove;
-  border-width: medium;
-  text-align: center;
-  background-image: url("../images/parchment-texture-1171541.jpg");
-  font-family: "goudita";
-  font-size: larger;
-  margin-top: 0.1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.menu_buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-nav a {
-  padding: 1em;
-  color: black;
-  text-decoration: none;
-}
-
-#header_pictures {
-  padding-top: 0.2em;
-  padding-bottom: 0.1em;
-  margin-top: 0;
-  text-align: center;
-}
-
-footer {
-  font-size: 1em;
-  font-family: "goudita";
-  text-align: center;
-  margin-top: auto;
-
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-style: groove;
-  border-width: medium;
-  border-color: black;
-  background-image: url("../images/parchment-texture-1171541.jpg");
-  background-color: white;
+.postCardImage {
+    width: 100%;
 }

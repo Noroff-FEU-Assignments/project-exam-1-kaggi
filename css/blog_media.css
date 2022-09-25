@@ -1,0 +1,27 @@
+@media only screen and (min-device-width: 300px) {
+    .postCard {
+        width: 300px;
+    }
+
+    .postCardImage {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {
+    .postCard {
+        width: 600px;
+    }
+
+    .postCardImage {
+        max-width: 580px;
+    
+    } 
+}
+
+@media only screen and (min-device-width: 900px) {
+
+}
+
+@media only screen and (min-device-width: 1200px) {
+}

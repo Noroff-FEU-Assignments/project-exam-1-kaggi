@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "goudita";
+    src: url("../fonts/GouditaSerial/font.woff") format("woff");
+}
+
+body {
+    font-family: 'goudita','Times New Roman', Times, serif;     
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.current_page {
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#3E428C;
+    border: solid 1px #3E428C;
+    
+}
+
+blockquote {
+    text-align: center;
+}
+
+.has-text-align-center {
+    text-align: center;
+}
+
+cite {
+    font-size: 0.8em;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: #212340;
+}
+
+figure {
+    text-align: center;
+}
+
+.wp-block-gallery {    
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*Header*/
+
+header {
+    background-color: #252859;
+    color: #F2F2F2;
+    font-size: 2em;
+    text-align: center;    
+}
+
+.site_name {
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+}
+
+a {
+    color: #3E428C;
+}
+
+a:visited {
+    color: #3E428C;
+}
+
+/*Navigation*/
+
+nav {
+    text-align: center;
+}
+
+.navigation_links {
+    
+    padding-top: 1em;
+    padding-bottom: 0.5em;    
+    border-bottom: solid 0.1em #212340;    
+    
+}
+
+.menu_button {
+    color: #212340;
+    text-decoration: none;
+    padding: 0.5em;
+    
+}
+
+.menu_button:visited {
+    color: #212340;
+    text-decoration: none;
+}
+   
+.menu_button:hover {
+    background-color: #3E428C;
+    color: #F2F2F2;
+  }
+
+#hamburger_menu_checkbox {
+    display: none;
+}
+
+.navigation_links {
+    display: none;
+}
+
+
+#hamburger_menu_checkbox:checked ~ .navigation_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.fa-bars {
+    font-size: 2em;    
+    color: #212340;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #252859;
+    color: #F2F2F2;
+    font-size: 1em;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+

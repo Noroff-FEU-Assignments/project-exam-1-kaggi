@@ -4,35 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My journey through the worlds of Might and Magic"/>
+    <meta
+      name="description"
+      content="My journey through the worlds of Might and Magic"
+    />
     <title>Home | Might and Magic Worlds</title>
 
     <!--Fonts-->
     <!--End Fonts-->
 
     <!--Styles-->
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/common_media.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <link href="css/index_media.css" rel="stylesheet" />
+    
     <!--End styles-->
 
-    <!--Script for mobile devices menu-->    
-    <script src="https://kit.fontawesome.com/b9ea43cd7c.js" crossorigin="anonymous"></script>
-    <!--End script for mobile devices menu-->    
+    <!--Script for mobile devices menu-->
+    <script
+      src="https://kit.fontawesome.com/b9ea43cd7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--End script for mobile devices menu-->
   </head>
 
   <body>
     <!--Header-->
+    <header>
+      <section class="site_name">Might and Magic Worlds</section>
+    </header>
     <!--End header-->
 
     <!--Navigation-->
+
+    <nav>
+      <label for="hamburger_menu_checkbox" id="hamburger_menu_label">
+        <i class="fa fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger_menu_checkbox" />
+
+      <div class="navigation_links">
+        <a href="index.html" class="menu_button" id="home_link">Home</a>
+        <a href="about.html" class="menu_button" id="about_link">About</a>
+        <a href="blog.html" class="menu_button" id="blog_link">Blog</a>
+        <a href="contact.html" class="menu_button" id="contact_link">Contact</a>
+      </div>
+    </nav>
     <!--End navigation-->
 
     <!--Main content-->
+    <main>
+      <container class="main_content_container">
+        <div class="home_page_content_top"></div>
+        
+        <div class="home_page_content_middle">
+          <h3>The last 12 posts</h3>
+          <div class="home_page_middle">              
+              <div class="home_page_latest_posts"></div>
+          </div>
+
+          <div class="navigation_buttons">
+            <i class="fas fa-solid fa-chevron-left button_prev"></i>
+            <i class="fas fa-solid fa-chevron-right button_next"></i>
+          </div>
+
+          <div class="link_to_blog">
+            <a href="blog.html">All blog posts</a>
+          </div>
+
+        </div>
+        
+        <div class="home_page_content_bottom"></div>
+      </container>
+    </main>
+
     <!--End main content-->
 
     <!--Footer-->
+    <footer>
+      <p>Created by: Lola Lohne aka Kaggi</p>
+      <p>2022</p>
+    </footer>
     <!--End footer-->
 
     <script src="js/index.js"></script>
   </body>
-
 </html>

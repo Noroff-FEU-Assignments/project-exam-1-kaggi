@@ -1,0 +1,35 @@
+.errorMessage {
+  display: none;
+}
+
+.contactForm {
+  max-width: 300px;
+  margin:auto;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
+}
+
+.errorMessage {
+  color: red;
+}
+
+
+#messageSent {
+  
+  color: #F2F2F2;
+  background-color: #3E428C;
+  border: solid 1px #212340;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0.5em;
+}

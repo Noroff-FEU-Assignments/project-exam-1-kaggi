@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="My journey through the worlds of Might and Magic"
-    />
-    <title>Home | Might and Magic Worlds</title>
+    <meta name="description" content="Contact me" />
+    <title>Contact | Might and Magic Worlds</title>
 
     <!--Fonts-->
     <!--End Fonts-->
@@ -16,9 +13,8 @@
     <!--Styles-->
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/common_media.css" rel="stylesheet" />
-    <link href="css/empty_page.css" rel="stylesheet" />
-    <link href="css/empty_page_media.css" rel="stylesheet" />
-
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/contact_media.css" rel="stylesheet" />
     <!--End styles-->
 
     <!--Script for mobile devices menu-->
@@ -51,14 +47,49 @@
         <a href="contact.html" class="menu_button" id="contact_link">Contact</a>
       </div>
     </nav>
-
     <!--End navigation-->
 
     <!--Main content-->
     <main>
-      <container class="main_content_container">
-        <div class="postCard"></div>
-      </container>
+      <h1>Contact me!</h1>
+
+      <div class="formContainer">
+        <form class="contactForm">
+          <div id="successSubmittingForm"></div>
+
+          <div class="formField" id="nameField">
+            <label>Name (min 6 characters)</label>
+            <input name="name" id="name" />
+            <div class="errorMessage" id="nameError">Name is too short</div>
+          </div>
+
+          <div class="formField" id="emailField">
+            <label>Email</label>
+            <input name="email" id="email" />
+            <div class="errorMessage" id="emailError">
+              Please enter a valid email
+            </div>
+          </div>
+
+          <div class="formField" id="subjectField">
+            <label>Subject (min 16 characters)</label>
+            <input name="subject" id="subject" />
+            <div class="errorMessage" id="subjectError">
+              Subject is too short
+            </div>
+          </div>
+
+          <div class="formField" id="messageField">
+            <label>Write a message (min 26 characters) </label>
+            <textarea name="message" id="message"></textarea>
+            <div class="errorMessage" id="messageError">
+              Message is too short
+            </div>
+          </div>
+
+          <button id="submitButton">Submit</button>
+        </form>
+      </div>
     </main>
 
     <!--End main content-->
@@ -70,6 +101,6 @@
     </footer>
     <!--End footer-->
 
-    <script src="js/empty_page.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

@@ -1,0 +1,52 @@
+@media only screen and (min-device-width: 300px) {
+    .home_page_middle {
+        
+        max-width: 300px;
+    }
+
+    .home_page_latest_posts {
+        width: 300px;
+        display: flex;        
+    }
+
+    .postCard {
+        width: 300px;
+    }
+
+    .postCardImage {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {   
+    .home_page_middle {
+        
+        max-width: 600px;
+    }
+
+    .home_page_latest_posts {
+        width: 600px;
+        display: flex;        
+    }
+
+    .postCard {
+        width: 600px;
+    }
+
+    .postCardImage {
+        max-width: 580px;
+    
+    }    
+    
+
+   
+}
+
+@media only screen and (min-device-width: 900px) {
+
+  
+
+}
+
+
+

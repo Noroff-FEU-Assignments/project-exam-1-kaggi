@@ -1,0 +1,16 @@
+@media only screen and (min-device-width: 300px) {
+    iframe {
+        
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {
+}
+
+@media only screen and (min-device-width: 900px) {
+
+}
+
+@media only screen and (min-device-width: 1200px) {
+}
