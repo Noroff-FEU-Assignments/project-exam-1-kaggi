@@ -13,6 +13,7 @@ let postImageUrl = "";
 let toPostUrl = "";
 let postId = "";
 let offset = 0;
+let firstMore = 0;
 
 const cards = document.querySelectorAll(".postCard");
 
@@ -50,7 +51,7 @@ async function getPosts() {
             
             toPostUrl = `post.html?id=${postId}`;
             
-            blogPosts.innerHTML += `<div class="postCard" id="${i}">
+            blogPosts.innerHTML += `<div class="postCard" id="${postId}">
                                         <a href="${toPostUrl}">
                                         <h3>${postTitle}<h3>
                                         <img src="${postImageUrl}" alt="Featured image" class="postCardImage" />
@@ -88,9 +89,10 @@ getPosts();
 const showMoreLink = document.querySelector("#show_more_link");
 
 
-showMoreLink.addEventListener("click", () => {
+showMoreLink.addEventListener("click", (event) => {
+    event.preventDefault();
     getMorePosts();
-
+    window.location.href = `#${firstMore}`;
 
 })
 
@@ -100,6 +102,8 @@ async function getMorePosts () {
     try {
         const response = await fetch( offsetURL );
         posts = await response.json();
+
+        firstMore = posts[0].id;
 
         for( let i = 0; i < posts.length; i++) {
             postTitle = postTitle = posts[i].title.rendered;
@@ -114,7 +118,8 @@ async function getMorePosts () {
             
             toPostUrl = `post.html?id=${postId}`;
             
-            blogPosts.innerHTML += `<div class="postCard" id="${i}">
+                        
+            blogPosts.innerHTML += `<div class="postCard" id="${postId}" >
                                         <a href="${toPostUrl}">
                                         <h3>${postTitle}<h3>
                                         <img src="${postImageUrl}" alt="Featured image" class="postCardImage" />
@@ -129,10 +134,14 @@ async function getMorePosts () {
 
         console.log(totalNumberOfPosts);
         console.log(offset);
+        
+
+
         if ( totalNumberOfPosts > 0) {
             showMore.style.display = "block";
             offsetURL = offsetURL + offset;
             console.log(offsetURL);
+            
         }
         else {
             showMore.style.display = "none";
