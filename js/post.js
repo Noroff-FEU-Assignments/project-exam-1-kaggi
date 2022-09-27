@@ -9,7 +9,7 @@ const id = params.get("id");
 
 const myPostURL = mightandmagicworldsURL + postsURL + id + "?_embed";
 
-
+const title = document.querySelector("title");
 
 const postTitle = document.querySelector("h1");
 const postContent = document.querySelector(".post_content");
@@ -23,7 +23,9 @@ async function getPost() {
         const response = await fetch(myPostURL); 
         const results = await response.json();         
         
-        postTitle.innerHTML = results.title.rendered;
+        let titleText = results.title.rendered;
+        title.innerHTML = titleText + " | Might and Magic Worlds";
+        postTitle.innerHTML = titleText;
         postContent.innerHTML = results.content.rendered;  
         
         
