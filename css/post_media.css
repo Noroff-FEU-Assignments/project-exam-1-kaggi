@@ -3,9 +3,18 @@
         
         width: auto;
     }
+
+    .modal {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media only screen and (min-device-width: 600px) {
+    .modal {
+        width: 500px;
+        height: 500px;
+    }
 }
 
 @media only screen and (min-device-width: 900px) {

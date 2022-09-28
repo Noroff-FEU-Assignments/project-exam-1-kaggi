@@ -18,3 +18,40 @@ iframe {
     width: 100%;
     height: auto;
 }
+
+input[type="checkbox"] {
+	display:none;
+}
+
+input[type="checkbox"]:checked ~ .modal
+{
+	display: block;
+}
+
+.picture_little {
+    max-width: 100px;
+    height: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;	
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+
+  figurecaption p {
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0.1em;
+    margin-top: 0;
+  }
