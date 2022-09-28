@@ -19,7 +19,17 @@
 
 @media only screen and (min-device-width: 900px) {
 
+    .modal img.resize{
+        width: 800px;
+        height: 800px;
+    }
 }
 
 @media only screen and (min-device-width: 1200px) {
+
+    .modal img.resize{
+        width: 900px;
+        height: 900px;
+    }
+
 }

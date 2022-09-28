@@ -28,8 +28,10 @@ input[type="checkbox"]:checked ~ .modal
 	display: block;
 }
 
+
+
 .picture_little {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
 }
 
