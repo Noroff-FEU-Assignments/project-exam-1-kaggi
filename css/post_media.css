@@ -10,7 +10,7 @@
 }
 
 @media only screen and (min-device-width: 600px) {
-  .picture_modal {
+  .picture_modal img.resize {
     width: 500px;
     height: 500px;
   }
