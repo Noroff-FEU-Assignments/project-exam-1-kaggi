@@ -37,10 +37,6 @@ iframe {
   display: none;
 }
 
-.picture_modal img {
-  width: 100%;
-}
-
 figurecaption p {
   font-size: 0.8em;
   font-style: italic;
