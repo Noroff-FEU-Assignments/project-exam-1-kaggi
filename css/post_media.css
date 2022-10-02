@@ -1,35 +1,31 @@
 @media only screen and (min-device-width: 300px) {
-    iframe {
-        
-        width: auto;
-    }
+  iframe {
+    width: auto;
+  }
 
-    .modal {
-        width: 80%;
-        height: 80%;
-    }
+  .picture_modal {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media only screen and (min-device-width: 600px) {
-    .modal {
-        width: 500px;
-        height: 500px;
-    }
+  .picture_modal {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media only screen and (min-device-width: 900px) {
-
-    .modal img.resize{
-        width: 800px;
-        height: 800px;
-    }
+  .picture_modal img.resize {
+    width: 800px;
+    height: 800px;
+  }
 }
 
 @media only screen and (min-device-width: 1200px) {
-
-    .modal img.resize{
-        width: 900px;
-        height: 900px;
-    }
-
+  .picture_modal img.resize {
+    width: 900px;
+    height: 900px;
+  }
 }
