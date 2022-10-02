@@ -10,21 +10,21 @@
 }
 
 @media only screen and (min-device-width: 600px) {
-  .picture_modal img.resize {
+  .picture_modal {
     width: 500px;
     height: 500px;
   }
 }
 
 @media only screen and (min-device-width: 900px) {
-  .picture_modal img.resize {
+  .picture_modal {
     width: 800px;
     height: 800px;
   }
 }
 
 @media only screen and (min-device-width: 1200px) {
-  .picture_modal img.resize {
+  .picture_modal {
     width: 900px;
     height: 900px;
   }
