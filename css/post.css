@@ -25,7 +25,7 @@ iframe {
   display: block;
 }
 
-.picture_trigger {
+.picture_trigger img {
   max-width: 50%;
   height: auto;
 }
