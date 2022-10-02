@@ -6,9 +6,6 @@
   .little_picture {
     max-width: 200px;
   }
-  .picture_modal {
-    max-width: 300px;
-  }
 }
 
 @media only screen and (min-device-width: 400px) {
@@ -30,13 +27,13 @@
     width: 500px;
     height: 281px;
   }
-  .little_picture {
-    max-width: 550px;
-  }
 }
 
 @media only screen and (min-device-width: 900px) {
 }
 
 @media only screen and (min-device-width: 1200px) {
+  .picture_modal {
+    max-width: 900px;
+  }
 }
