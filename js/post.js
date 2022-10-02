@@ -38,11 +38,9 @@ async function getPost() {
 getPost();
 
 function showModal() {
-  
   document.querySelector(".picture_modal").style.visibility = "visible";
 }
 
 function closeModal() {
-  
   document.querySelector(".picture_modal").style.visibility = "hidden";
 }

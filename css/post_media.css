@@ -1,26 +1,42 @@
 @media only screen and (min-device-width: 300px) {
+  iframe {
+    width: 250px;
+    height: 140px;
+  }
+  .little_picture {
+    max-width: 200px;
+  }
   .picture_modal {
     max-width: 300px;
   }
 }
 
+@media only screen and (min-device-width: 400px) {
+  iframe {
+    width: 300px;
+    height: 169px;
+  }
+}
+
+@media only screen and (min-device-width: 500px) {
+  iframe {
+    width: 400px;
+    height: 225px;
+  }
+}
+
 @media only screen and (min-device-width: 600px) {
-  .picture_modal {
-    max-width: 500px;
-    height: auto;
+  iframe {
+    width: 500px;
+    height: 281px;
+  }
+  .little_picture {
+    max-width: 550px;
   }
 }
 
 @media only screen and (min-device-width: 900px) {
-  .picture_modal {
-    max-width: 800px;
-    height: auto;
-  }
 }
 
 @media only screen and (min-device-width: 1200px) {
-  .picture_modal {
-    max-width: 900px;
-    height: auto;
-  }
 }
