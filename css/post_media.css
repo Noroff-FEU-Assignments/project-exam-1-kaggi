@@ -1,4 +1,7 @@
 @media only screen and (min-device-width: 300px) {
+  .picture_modal {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (min-device-width: 600px) {
