@@ -20,7 +20,7 @@ iframe {
   display: block;
 }
 
-.picture_trigger img {
+.picture_trigger {
   max-width: 50%;
   height: auto;
 }
