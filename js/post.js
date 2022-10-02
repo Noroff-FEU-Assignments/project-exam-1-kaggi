@@ -1,6 +1,9 @@
 let blogLink = document.querySelector("#blog_link");
 blogLink.classList.add("current_page");
 
+const modal_trigger = document.querySelector(".little_picture");
+const modal_picture = document.querySelector(".picture_modal");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const mightandmagicworldsURL =
@@ -34,10 +37,12 @@ async function getPost() {
 
 getPost();
 
-const modal = document.querySelector(".picture_modal");
+function showModal() {
+  
+  document.querySelector(".picture_modal").style.visibility = "visible";
+}
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+function closeModal() {
+  
+  document.querySelector(".picture_modal").style.visibility = "hidden";
+}

@@ -1,0 +1,50 @@
+figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  padding: 5px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+#modal_checkbox {
+  display: none;
+}
+
+#modal_checkbox:checked ~ .picture_modal {
+  display: block;
+}
+
+.picture_trigger {
+  max-width: 50%;
+  height: auto;
+}
+
+.picture_modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: none;
+}
+
+.picture_modal_img {
+  max-width: 80%;
+  height: auto;
+}
+
+figurecaption p {
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 0.1em;
+  margin-top: 0;
+}
